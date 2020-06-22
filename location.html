@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+		<div id="header">
+				<img src="img/logo.svg"/>
+				<span id="title">Location</span>
+		</div>
+		<nav id="alter-nav">
+			<div id="img-wrapper">
+			<img src="img/menu.png" onclick="showDropDown(event)">
+			</div>
+			<div id = "menu-dropdown">
+				<div>
+					<a href="https://piazza.com/class/jcpjjp5l4bywd">Piazza</a>
+					<a href="https://markus.utsc.utoronto.ca/cscb20w18/?locale=en">Markus</a>
+					<a href="assignments.html">Assignment</a>
+					<a href="feedback.html">Anon Feedback</a>
+					<a href="res/CSCB20CourseSyllabus.pdf">Syllabus</a>
+					<a href="lab.html">UTSC Lab</a>
+					<a href="courseTeam.html">Course Team</a>
+					<a href="index.html">Home</a>
+				</div>
+			</div>
+		</nav>
+		<nav id="nav">
+			<div class="flex-box">
+			<a href="https://piazza.com/class/jcpjjp5l4bywd">Piazza</a>
+			<a href="https://markus.utsc.utoronto.ca/cscb20w18/?locale=en">Markus</a>
+			<div class="dropdown">
+				<a href="assignments.html">Assignment</a>
+				<div class="dropdown-menu tran">
+					<a href="res/CSCB20Assignment1.pdf">Assignment1</a>
+					<a href="res/CSCB20Assignment2.pdf">Assignment2</a>
+					<a href="">Assignment3</a>
+				</div>
+			</div>
+			<a href="feedback.html">Anon Feedback</a>
+			<a href="res/CSCB20CourseSyllabus.pdf">Syllabus</a>
+			<div class="dropdown">
+				<a href="lab.html">UTSC Lab</a>
+				<div class="dropdown-menu tran">
+					<a href="#home">Week1</a>
+					<a href="#about">Week2</a>
+					<a href="#contact">Week3</a>
+					<a href="#home">Week4</a>
+					<a href="#about">Week5</a>
+					<a href="#contact">Week6</a>
+				</div>
+			</div>
+			<a href="courseTeam.html">Course Team</a>
+			</div>
+			<a id="home" href="index.html">Home</a>
+		</nav>
+		<div id="main_block">
+		<div id="main_page_body">
+			<div class="component">
+				<div class="mock-table-border">
+					<div class="row grid-2">
+						<div class="col tran">Street:</div>
+						<div class="col tran">1265 Military Trail</div>
+					</div>
+					<div class="row grid-2">
+						<div class="col tran">City:</div>
+						<div class="col tran">Scarborough</div>
+					</div>
+					<div class="row grid-2">
+						<div class="col tran">Provincd:</div>
+						<div class="col tran">Ontario</div>
+					</div>
+					<div class="row grid-2">
+						<div class="col tran">Postal Code:</div>
+						<div class="col tran">M1C 1A4</div>
+					</div>
+					<div class="row grid-2">
+						<div class="col tran">Building:</div>
+						<div class="col tran">Science Wing(sw)</div>
+					</div>
+					<div class="row grid-2">
+						<div class="col tran">Room:</div>
+						<div class="col tran">sw319</div>
+					</div>
+				</div>
+				<div class="mock-table">
+					<div class="row">
+						<a class="col center-button tran" href="https://www.google.com/maps/dir/?api=1&destination=UTSC&destination_place_id=ChIJkUTUam7a1IkR2hWXb_C_pBU">
+						 But how could I get there?
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="component">
+				<div id="map" style="width:100%; height:80vh;"></div>
+				
+				<script>
+				function initMap() {
+			        var utsc = {lat: 43.7841313, lng: -79.1890347};
+			        var map = new google.maps.Map(document.getElementById('map'), {
+			          zoom: 17,
+			          center: utsc
+			        });
+			        var marker = new google.maps.Marker({
+			          position: utsc,
+			          map: map
+			        });
+			      }
+				</script>
+				<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB__8ALOIEQgNOVCjX3sGq287e0Q72d7Sc&callback=initMap"></script>
+			</div>
+		</div>
+		<div class="footer-tag">
+			    <div class="left-float">
+		    		<div class="grow-small">
+		    			<a href="http://web.cs.toronto.edu/">Faculty of Computer Science at UofT</a>
+		    		</div>
+			
+			    	<p>Copyright © 2018 Site Design by Chiheng Li and Nicole Xin Yue Wang</p>
+			    </div>
+			    <div class="right-float">
+			    	<p><b>email: </b>chiheng.li@mail.utoronto.ca</p>
+			    	<p>and nicoletut.wang@mail.utoronto.ca </p>
+			    </div>
+		</div>
+		</div>
+		</body>
+		<script src="js/main.js"></script>
+</html>

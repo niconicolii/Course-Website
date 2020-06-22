@@ -1,0 +1,560 @@
+body {
+	font-family: Verdana,sans-serif;
+	background-image: url(../img/final.png);
+}
+#header, .footer-tag, #img-wrapper, #menu-dropdown > div, .flat-button, .center-button{
+	background-color: #5085a7;
+}
+#header, .footer-tag {
+	background-color: #5085a7;
+	display: flex;
+	justify-content: space-between;
+	opacity: 0.8;
+	flex-wrap: wrap;
+}
+.footer-tag > *, #header > * {
+	flex-shrink: 1;
+}
+#header {
+	align-items: center;
+}
+#header > img {
+	/*display: inline-block;*/
+	/*float: left;*/
+	/*water hydro gas security*/
+	width: 200px;
+	margin: 10px 10px 20px 20px;
+}
+#title {
+	color: white;
+	height: 100%;
+	margin: 0 20px;
+	font-size: x-large;
+	font-family: "Times New Roman", Times, serif;
+}
+/* Clear the margin of default */
+h2, body, h1, p {
+	margin: 0px;
+}
+h2, h1 {
+	color: #551A8B;
+}
+a:visited, a, a:link {
+	text-decoration: none;
+	font-weight: bold;
+}
+#nav a:visited, #nav a, #nav a:link {
+	color: #551a8b;
+}
+a.center-button {
+	display: inline;
+	text-align: center;
+}
+.flat-button, .center-button {
+	color: white;
+}
+h2, h1 {
+	/* Create a bottom line for the h2 tittle. */
+	border-bottom: 1px solid #551A8B;
+	margin-bottom: 5px;
+}
+
+/* Clear the margin and the padding of ul. */
+ol {
+	/* For displaying the number properly. */
+	margin: 0 0 0 15px;
+	padding: 5px;
+}
+/* Set the the distance of every two lis. */
+li {
+	padding: 5px 0;
+}
+
+#alter-nav, #nav {
+	min-width: 0%;
+	/* Prevent from being covered by other elements. */
+	z-index: 2;
+	background-color: rgba(231,231,231,0.9);
+}
+#alter-nav img {
+	transition: transform 500ms;
+	vertical-align: middle;
+	width: 3em;
+	display: inline-block;
+}
+#alter-nav {
+	display: none;
+	padding: 0;
+	line-height: 0;
+}
+#nav {
+	display: flex;
+	padding: 0 5%;
+	/* Prevent from werid layout when zomming in. */
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+#home {
+	float: right;
+}
+
+.mv-bar {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0px;
+}
+.footer-tag {
+	/*border-top: 1px black solid;*/
+	font-size: small;
+	line-height: 1.3em;
+	font-family: "bookman old style";
+	position: relative;
+    top: 2em;
+	padding: 50px 50px;
+	color: white;
+	clear: both;
+}
+.left-float > div {
+	display: inline-block;
+}
+/*.mock-table, .mock-table-border, .mock-table-border > .row:nth-child(odd) {
+	background-color: rgba(255,255,255,0.7);
+}*/
+.mock-table, .mock-table-border, .row {
+	display: flex;
+}
+.mock-table-border > .row:nth-child(2n) > .col{
+    background: rgba(230,231,232,0.7);
+}
+.mock-table-border .col {
+	border: 0.5px lavender solid;
+}
+.mock-table-border {
+	-webkit-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+.mock-table-border:hover {
+	box-shadow:0px 3px 15px 3px rgba(0,0,0,0.2);
+}
+.col {
+	padding: 2px;
+	width: 100%;
+}
+.wrap-row {
+	flex-wrap: wrap;
+}
+.grid-4 > .col {
+	width: 25%;
+}
+.grid-3 > .col {
+	width: 33.3%;
+}
+.grid-2 > .col {
+	width: 50%;
+}
+/* It is a style which simulate the behavior of a table */
+.mock-table, .mock-table-border{
+	flex-direction: column;
+	/* Let the row be placed in the center of the table. */
+	justify-content: center;
+}
+nav a {
+	padding: 0 10px;
+	vertical-align:middle;
+	text-align: center;
+	line-height: 3em;
+	display: block;
+}
+nav a:hover, .tran:hover, .mock-table > .col:hover, #alter-nav{
+	/* Set some transition effect when hover on the hypertext */
+    -webkit-transition: background-color 700ms linear;
+    -ms-transition: background-color 700ms linear;
+    transition: background-color 700ms linear;
+}
+nav a:hover {
+	background-color: #aeaee5;
+}
+/* For sidenav bar */
+.sidenav{
+	position: fixed;
+	z-index: 1;
+	/* regualte the position */
+	top: 200px;
+	left: 91%;
+	background: #ddd4d6;
+	/* Make the side bar looks even. */
+	padding-bottom: 20px;
+	/* Set it to be trasparent */
+	opacity: 0.8;
+}
+.sidenav > a, .sidenav > h3 {
+	color: #9b8186;
+	padding: 10px 20px;
+}
+.sidenav > a {
+	font-size: 16px;
+}
+.sidenav > a:hover {
+	background-color: #5d1381;
+}
+@media (max-width: 768px) {
+	.sidenav {
+		display: none;
+	}
+}
+
+.tran:hover, .dropdown:hover {
+	background-color: #c0c0f7;
+}
+/* Set the growing effect. */
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.2); }
+.grow-small { transition: all .2s ease-in-out; }
+.grow-small:hover { transform: scale(1.1); }
+/* Set the distance between every two section. */
+.component, .new-component {
+	/* For accomedating the shadow border. */
+	margin: 10px 2px;
+	padding: 10px 30px;
+	background-color: white;
+	/* Apply opacity onl
+	y to the parent element. */
+	background-color: rgba(255, 255, 255, 0.7);
+	line-height: 2em;
+	overflow: hidden;
+}
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-content: center;
+}
+.double-component, .flex-box {
+	justify-content: space-between;
+}
+.double-component > div {
+ 	display: inline-block;
+ 	/* Prevent extra spacing. */
+	margin-bottom: 0;
+}
+
+.component, #announcement_wrapper, .sidenav, .dropdown-menu, .center-button, nav
+	, .new-component
+{
+	/* Set the shadow to be light grey and blur. */
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+}
+.component, #announcement_wrapper, .center-button {
+	border-radius: 8px;
+}
+#main_block {
+	position: relative;
+}
+/* Set the content to the center of the page */
+#main_page_body {
+	margin: 0 auto;
+	width: 90%;
+}
+#course_description, #announcement_block {
+	flex-shrink: 1;
+	flex-grow: 1;
+	margin-top: 0;
+}
+#course_description {
+	margin-right: 10px;
+}
+/* Set the class where the text is left aligned. */
+.left {
+	text-align: right;
+}
+.center-button {
+	padding: 10px 0;
+	border-radius: 5px;
+	margin: 5px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.flat-button:active, .center-button:hover {
+	background-color: #aeaee5;
+}
+
+.dropdown {
+    position: relative;
+}
+/* Create the drop down menu and the transition. */
+.dropdown-menu {
+	opacity: 0;
+	z-index: 1;
+	visibility: hidden;
+    position: absolute;
+    width: 100%;
+	top: 100%;
+	background-color: #c0c0f7;
+	/* Set some transition effect when hover on the hypertext */
+    -webkit-transition: opacity 500ms linear;
+    -ms-transition: opacity 500ms linear;
+    transition: opacity 500ms linear;
+    font-size: small;
+}
+.dropdown-menu a {
+	padding: 0 15%;
+	padding: 5% 0;
+}
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
+.inline-block {
+	display: inline-block;
+}
+@media (max-width: 860px) {
+	#nav {
+		display: none;
+	}
+	#alter-nav {
+		display: block;
+	}
+}
+@media only screen and (max-width: 640px){
+	.double-component {
+		flex-wrap: wrap;
+	}
+	body {
+		font-size: xx-small;
+	}
+	nav a {
+		font-size: xx-small;
+	}
+
+	.feedback b {
+		font-size: x-small;
+	}
+	#main_page_body {
+		width: 100%;
+	}
+	.component, .new-component{
+		padding: 10px;
+		margin: 10px;
+	}
+	#course_description{
+		margin-right: 10px;
+	}
+	#announcement_block {
+		margin-top: 10px;
+	}
+	#header {
+		padding-bottom: 10px;
+	}
+	.footer-tag {
+		font-size: x-small;
+		padding: 50px 5px;
+	}
+}
+@media only screen and (max-device-width: 640px){
+	body {
+		font-size: large;
+	}
+	nav a{
+		font-size: large;
+	}
+	.component {
+		border-radius: 15px;
+	}
+}
+
+#img-wrapper {
+	display: inline-block;
+}
+#menu-dropdown {
+	position: relative;
+
+	/*font-size: ;*/
+}
+#menu-dropdown > div{
+	/*min-height: 500px;
+	overflow: scroll;*/
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	display: none;
+	justify-content: center;
+	flex-wrap: wrap;
+	z-index: 3;
+	width: 100%;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 200ms ease-in-out;
+}
+#menu-dropdown > div > a {
+	display: inline-block;
+	color: white;
+}
+@media only screen and (max-height: 350px),
+       only screen and (orientation: landscape)
+    {
+	#menu-dropdown > div{
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	}
+}
+#cal {
+    min-width: 100%;
+}
+/* For google calendar */
+@media (max-width: 550px) {
+     .big-container {
+         display: none;
+     }
+}
+
+@media (min-width: 550px) {
+     .small-container {
+         display: none;
+     }
+}/* Responsive iFrame */
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+.responsive-iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.end-text {
+    text-align: end;
+    color: #551A8B;
+}
+.flex-float {
+    justify-content: flex-end;
+}
+textarea {
+	width: 100%;
+	font-size: x-large;
+}
+.opacity_animated {
+	transition: opacity 500ms ease-in-out;
+}
+#login_wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#login_block {
+    display: inline-block;
+    background-color: white;
+    opacity: 0.8;
+    padding: 48px 40px;
+    box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12),
+    0 1px 5px 0 rgba(0,0,0,0.2);
+}
+#login_img {
+    width: 120px;
+}
+#heading_text {
+    padding-top: 10px;
+    font-size: 24px;
+}
+#heading_text ~ p {
+    padding: 2px 0;
+}
+#login_form{
+    padding-top: 48px;
+}
+#login_form > div {
+    margin-bottom: 24px;
+}
+.input_field {
+	transition: border-bottom-color 500ms linear;
+    border-bottom: 1px #dddddd solid;
+}
+#register_field > a{
+    font-size: small;
+    color: #1a8ed5;
+	font-weight: normal;
+}
+input[type=text]:focus, input[type=text],
+input[type=password]:focus, input[type=password],
+input[type=email]:focus, input[type=email]{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 300px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset ;
+}
+#button_field, #feedback_form button{
+    float: right;
+    background-color: #1a8ed5;
+    color: white;
+    border: none;
+    text-decoration: none;
+    border-radius: 13px;
+    line-height: 2em;
+    padding: 2px 10px;
+    transition: background 500ms linear;
+    outline:none;
+    margin-bottom: 24px;
+}
+
+#button_field:hover {
+    background-color: #0b517d;
+}
+
+label {
+	font-size: large;
+	margin: 0 0 10px 0;
+	display: block;
+}
+#feedback-submit h2 {
+    color: #0b517d;
+    border-bottom-color: #0b517d;
+}
+#feedback_form {
+	margin-top: 10px;
+}
+#feedback_form div {
+    clear: both;
+}
+#feedback_form textarea {
+	resize: none;
+    max-lines: 10;
+}
+#feedback_form .char_hint {
+    float: right;
+}
+#feedback_date input {
+    vertical-align: middle;
+    line-height: normal;
+}
+#feedback_date input[type=number]{
+    margin-top: 1px;
+    padding: 3px;
+    width: 10em;
+}
+.ans {
+    margin-bottom: 10px;
+    margin-left: 2em;
+}
+.removed
+{
+    transition: height 5s;
+}
+.no-border .col {
+	border: none;
+}

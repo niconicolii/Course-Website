@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<title></title>
+	</head>
+	<body>
+		<div id="header">
+				<img src="img/logo.svg"></img>
+				<span id="title">CSCB20 Homepage</span>
+		</div>
+		<nav id="alter-nav">
+			<div id="img-wrapper">
+			<img src="img/menu.png" onclick="showDropDown(event)">
+			</div>
+			<div id = "menu-dropdown">
+				<div>
+					<a href="https://piazza.com/class/jcpjjp5l4bywd">Piazza</a>
+					<a href="https://markus.utsc.utoronto.ca/cscb20w18/?locale=en">Markus</a>
+					<a href="assignments.html">Assignment</a>
+					<a href="feedback.html">Anon Feedback</a>
+					<a href="res/CSCB20CourseSyllabus.pdf">Syllabus</a>
+					<a href="lab.html">UTSC Lab</a>
+					<a href="courseTeam.html">Course Team</a>
+					<a href="index.html">Home</a>
+				</div>
+			</div>
+		</nav>
+		<nav id="nav">
+			<div class="flex-box">
+			<a href="https://piazza.com/class/jcpjjp5l4bywd">Piazza</a>
+			<a href="https://markus.utsc.utoronto.ca/cscb20w18/?locale=en">Markus</a>
+			<div class="dropdown">
+				<a href="assignments.html">Assignment</a>
+				<div class="dropdown-menu tran">
+					<a href="res/CSCB20Assignment1.pdf">Assignment1</a>
+					<a href="res/CSCB20Assignment2.pdf">Assignment2</a>
+					<a href="">Assignment3</a>
+				</div>
+			</div>
+			<a href="feedback.html">Anon Feedback</a>
+			<a href="res/CSCB20CourseSyllabus.pdf">Syllabus</a>
+			<div class="dropdown">
+				<a href="lab.html">UTSC Lab</a>
+				<div class="dropdown-menu tran">
+					<a href="#home">Week1</a>
+					<a href="#about">Week2</a>
+					<a href="#contact">Week3</a>
+					<a href="#home">Week4</a>
+					<a href="#about">Week5</a>
+					<a href="#contact">Week6</a>
+				</div>
+			</div>
+			<a href="courseTeam.html">Course Team</a>
+			</div>
+			<a id="home" href="index.html">Home</a>
+		</nav>
+		<div id="main_block">
+			<div id="main_page_body">
+				<div class="row double-component grid-2">
+					<div id="course_description" class="col component">
+						<h2>Course Description</h2>
+						A practical introduction to databases and Web app development.
+						Databases: terminology and applications; creating, querying and 
+						updating databases; the entity-relationship model for database 
+						design. Web documents and applications: static and interactive 
+						documents; Web servers and dynamic server-generated content; 
+						Web application development and interface with databases.
+					</div>
+					<div id="announcement_block" class="col component">
+						<h2>Announcement</h2>
+							<div>
+								<ol>
+		          					<li>Cancelling office hours on 2nd March</li>
+							        <li>Assignment2 is now available</li>
+							        <li>Midterm Exam Marks are now available</li>
+							    </ol>
+						    </div>
+						    <div class="left"><a href="announcement.html">More Details</a></div>
+					</div>
+				</div>
+				<section class="component">
+					<h2>Schedule and Instructor</h2>
+					<div class="mock-table">
+						<div class="row grid-3">
+							<div class="col">Instructor:</div>
+							<div class="col">A. Attarwala</div>
+						</div>
+						<div class="row grid-3">
+							<div class="col">Lecture:</div>
+							<div class="col">Mondays 9am to 11am in SW 319</div>
+						</div>
+						<div class="row grid-3">
+							<div class="col">Tutorials:</div>
+							<div class="col">Check Online Schedule</div>
+						</div>
+						<div class="row grid-3">
+							<div class="col">Email:</div>
+							<div class="col">A.Attarwala@utoronto.ca</div>
+						</div>
+					</div>
+				</section>
+				<section class="component">
+					<h2>Assessment</h2>
+					<div class="mock-table-border">
+						<p class="row grid-4">
+							<span class="col">Work</span>
+							<span class="col">Weight</span>
+							<span class="col">Start Date</span>
+							<span class="col">Due Date</span>
+						</p>
+						<p class="row grid-4">
+							<span class="col">Assignments</span>
+							<span class="col">30%</span>
+							<span class="col">Unknown</span>
+							<span class="col">Unknown</span>
+						</p>
+						<p class="row grid-4">
+							<span class="col">Practicals</span>
+							<span class="col">5%</span>
+							<span class="col">Unknown</span>
+							<span class="col">Unknown</span>
+						</p>
+						<p class="row grid-4">
+							<span class="col">Midterm Exams</span>
+							<span class="col">15%</span>
+							<span class="col">Unknown</span>
+							<span class="col">Unknown</span>
+						</p>
+						<p class="row grid-4">
+							<span class="col">Quizzes</span>
+							<span class="col">10%</span>
+							<span class="col">Unknown</span>
+							<span class="col">Unknown</span>
+						</p>
+						<p class="row grid-4">
+							<span class="col">Final Exam</span>
+							<span class="col">40%</span>
+							<span class="col">Unknown</span>
+							<span class="col">Unknown</span>
+						</p>
+					</div>
+				</section>	
+				<section class="component">
+					<h2>Need more info of the course?</h2>
+					<div class="mock-table">
+						<div class="row grid-3">
+							<a href="" class="center-button col grow">Material</a>
+							<a href="location.html" class="center-button col grow">Location</a>
+							<a href="calendar.html" class="center-button col grow">Calender</a>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="footer-tag">
+			    <div class="left-float">
+		    		<div class="grow-small">
+		    			<a href="http://web.cs.toronto.edu/">Faculty of Computer Science at UofT</a>
+		    		</div>
+			
+			    	<p>Copyright © 2018 Site Design by Chiheng Li and Nicole Xin Yue Wang</p>
+			    </div>
+			    <div class="right-float">
+			    	<p><b>email: </b>chiheng.li@mail.utoronto.ca</p>
+			    	<p>and nicoletut.wang@mail.utoronto.ca </p>
+			    </div>
+			</div>
+		</div>
+	</body>
+	<script src="js/main.js"></script>
+</html>
